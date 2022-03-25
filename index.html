@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel = "shortcut icon" href ="saavnicon.png" 
+        type = "image/png">
+        
+
+    
+    <title>Online Songs on JioSaavn:Download Songs</title>
+    <style>
+        body{
+            background-color: #f6f6f6;
+            margin: 0;
+        }
+        .bold{
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .nav-bar{
+            height: 60px;
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;  
+            margin-bottom: 20px;  
+            position:fixed;
+            top:0;
+            background-color:#f6f6f6 ;
+            border:.1px solid lightgray;
+           
+
+
+        }
+        .left-section{
+            height: 100%;
+            width:25% ;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .search-section{
+            height: 100%;
+            width:35% ;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .right-section{
+            height: 100%;
+            width:20% ;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .logo{
+      height: 100%;
+
+        }
+        .search-box{
+            border-radius: 20px;
+            width: 100%;
+            border:transparent;
+            height: 60%;
+            
+        }
+        .drop-list{
+            background-color: transparent;
+            border:none;
+            font-size: 15px;
+        }
+        .main{
+            height: 400px;
+            width: 78%;
+            display:flex;
+            margin-top: 80px;
+            margin-left: 20vw;
+        }
+        .left-content{
+            
+            width: 20%;
+            padding-left: 20px;
+            padding-top: 20px;
+            box-sizing:border-box;
+            position: fixed;
+            top:100px;      
+            
+        }
+        .right-content{
+            height: 100%;
+            width: 100%;
+           
+        }
+        .lib{
+            margin-top: 10px;
+            margin-left: 10px;
+            color:rgb(168, 142, 142);
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .icon{
+            margin-right: 10px;
+        }
+        .menu{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .playlist-button{
+            font-size: 15px;
+            border-radius: 20px;
+            border:1px solid #2bc5b4;
+            padding:10px 15px 10px 15px;
+            color:#2bc5b4;
+            margin-top: 20px;
+        }
+        .card-group{
+            width: 100%;
+            height: 30%;
+            display:flex;
+            order:1px solid black;
+            justify-content: space-around;
+            
+        }
+        .card{
+           width: 12%;
+           height: 100%;
+           
+        }
+        .card-imag{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .song-name{
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: center;
+            padding:0;
+            margin-top: 2px;
+        }
+        .fans{
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: center;
+            padding:0;
+            margin-top: -10px;
+
+        }
+        .card-group1{
+            width: 100%;
+            height: 30%;
+            display:flex;
+            justify-content: space-around;
+            margin-top:100px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="left-section">
+           <img class="logo" src="download-rem.png">
+            <div class="bold">Home</div>
+            <div class="bold">Brows</div>
+            <div class="bold">Upgrade</div>
+        </div>
+        <div class="search-section">
+            <input class="search-box" type="text" placeholder="Search"/>
+        </div>
+        <div class="right-section">
+            <div class="drop-down">
+                <select class="drop-list">
+                    <option class="bold" >Music Language</option>
+                    <option class="bold">Hindi</option>
+                    <option class="bold">Punjabi</option>
+                </select>
+                
+            </div>
+            <div class="bold">Log In</div>
+            <div class="bold">Sign Up</div>
+        </div>
+
+     </div>
+     <div class="left-content">
+        <div class="lib">LIBRARY</div>
+        <div class="menu">
+          <i class="icon far fa-clock"></i> <span>History</span>
+        </div>
+        <div class="menu">
+          <i class="icon fas fa-music"></i> <span>Songs</span>
+        </div>
+        <div class="menu">
+          <i class="icon fas fa-compact-disc"></i> <span>Albums</span>
+        </div>
+        <div class="menu">
+          <i class="icon fas fa-podcast"></i> <span>Podcasts</span>
+        </div>
+        <div class="menu">
+          <i class="icon fas fa-guitar"></i> <span>Artists</span>
+        </div>
+        <button class="menu playlist-button">
+          <span class="icon"><i class="fas fa-plus"></i></span>New Playlist
+        </button>
+     
+    </div>
+
+     <div class="main">
+         
+         <div class="right-content">
+             <h2 class="trend-title">Trending Now</h2>
+             <div class="card-group">
+                 <div class="card">
+                     <img class="card-imag" src="https://c.saavncdn.com/editorial/RomanticHits2021Hindi_20211201161144_150x150.jpg?bch=1638376930"/>
+                   <p class="song-name">Romantic Hits 2021 - Hindi</p>
+                   <p class="fans">178.6k fans</p>
+                 </div>
+                 <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/143/Meri-Tarah-Hindi-2022-20220114031006-150x150.webp?bch=456699"/>
+                  <p class="song-name">Meri Tarah</p>
+                  <p class="fans">165.6k fans</p>
+                </div>
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/243/Mehfooz-Hai-Hindi-2022-20220129151042-150x150.webp?bch=456699"/>
+                  <p class="song-name">Mehfooz Hai</p>
+                  <p class="fans">165.2k fans</p>
+                </div>
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/460/Pushpa-The-Rise-Part-01-Hindi-2021-20211216071001-150x150.jpg"/>
+                  <p class="song-name">Pushpa The Rise Part - 01</p>
+                  <p class="fans">179k fans</p>
+                </div>
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/editorial/IconsKishoreKumar_20210728170546_150x150.jpg?bch=1638341954 "/>
+                  <p class="song-name">Icons - Kishore Kumar</p>
+                  <p class="fans">175.5k fans</p>
+                </div>
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/286/Yaad-Na-Aaye-Hindi-2022-20220110053549-150x150.webp?bch=456699"/>
+                  <p class="song-name">Yaad Na Aaye</p>
+                  <p class="fans">170.6k fans</p>
+                </div>
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/editorial/RadheShyam-Hindi_20220112172851_150x150.jpg?bch=1642010371"/>
+                  <p class="song-name">Radhe-Shyam: Hindi</p>
+                  <p class="fans">169.6k fans</p>
+                </div>
+
+             </div>
+             <div class="card-group1">
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/editorial/RomanticHits2021Hindi_20211201161144_150x150.jpg?bch=1638376930"/>
+                  <p class="song-name">Romantic Hits 2021 - Hindi</p>
+                  <p class="fans">178.6k fans</p>
+                </div>
+                <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/143/Meri-Tarah-Hindi-2022-20220114031006-150x150.webp?bch=456699"/>
+                 <p class="song-name">Meri Tarah</p>
+                 <p class="fans">165.6k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/243/Mehfooz-Hai-Hindi-2022-20220129151042-150x150.webp?bch=456699"/>
+                 <p class="song-name">Mehfooz Hai</p>
+                 <p class="fans">165.2k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/460/Pushpa-The-Rise-Part-01-Hindi-2021-20211216071001-150x150.jpg"/>
+                 <p class="song-name">Pushpa The Rise Part - 01</p>
+                 <p class="fans">179k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/editorial/IconsKishoreKumar_20210728170546_150x150.jpg?bch=1638341954 "/>
+                 <p class="song-name">Icons - Kishore Kumar</p>
+                 <p class="fans">175.5k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/286/Yaad-Na-Aaye-Hindi-2022-20220110053549-150x150.webp?bch=456699"/>
+                 <p class="song-name">Yaad Na Aaye</p>
+                 <p class="fans">170.6k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/editorial/RadheShyam-Hindi_20220112172851_150x150.jpg?bch=1642010371"/>
+                 <p class="song-name">Radhe-Shyam: Hindi</p>
+                 <p class="fans">169.6k fans</p>
+               </div>
+
+            </div>
+            <div class="card-group1">
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/editorial/RomanticHits2021Hindi_20211201161144_150x150.jpg?bch=1638376930"/>
+                  <p class="song-name">Romantic Hits 2021 - Hindi</p>
+                  <p class="fans">178.6k fans</p>
+                </div>
+                <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/143/Meri-Tarah-Hindi-2022-20220114031006-150x150.webp?bch=456699"/>
+                 <p class="song-name">Meri Tarah</p>
+                 <p class="fans">165.6k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/243/Mehfooz-Hai-Hindi-2022-20220129151042-150x150.webp?bch=456699"/>
+                 <p class="song-name">Mehfooz Hai</p>
+                 <p class="fans">165.2k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/460/Pushpa-The-Rise-Part-01-Hindi-2021-20211216071001-150x150.jpg"/>
+                 <p class="song-name">Pushpa The Rise Part - 01</p>
+                 <p class="fans">179k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/editorial/IconsKishoreKumar_20210728170546_150x150.jpg?bch=1638341954 "/>
+                 <p class="song-name">Icons - Kishore Kumar</p>
+                 <p class="fans">175.5k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/286/Yaad-Na-Aaye-Hindi-2022-20220110053549-150x150.webp?bch=456699"/>
+                 <p class="song-name">Yaad Na Aaye</p>
+                 <p class="fans">170.6k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/editorial/RadheShyam-Hindi_20220112172851_150x150.jpg?bch=1642010371"/>
+                 <p class="song-name">Radhe-Shyam: Hindi</p>
+                 <p class="fans">169.6k fans</p>
+               </div>
+
+            </div>
+            <div class="card-group1">
+                <div class="card">
+                    <img class="card-imag" src="https://c.saavncdn.com/editorial/RomanticHits2021Hindi_20211201161144_150x150.jpg?bch=1638376930"/>
+                  <p class="song-name">Romantic Hits 2021 - Hindi</p>
+                  <p class="fans">178.6k fans</p>
+                </div>
+                <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/143/Meri-Tarah-Hindi-2022-20220114031006-150x150.webp?bch=456699"/>
+                 <p class="song-name">Meri Tarah</p>
+                 <p class="fans">165.6k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/243/Mehfooz-Hai-Hindi-2022-20220129151042-150x150.webp?bch=456699"/>
+                 <p class="song-name">Mehfooz Hai</p>
+                 <p class="fans">165.2k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/460/Pushpa-The-Rise-Part-01-Hindi-2021-20211216071001-150x150.jpg"/>
+                 <p class="song-name">Pushpa The Rise Part - 01</p>
+                 <p class="fans">179k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/editorial/IconsKishoreKumar_20210728170546_150x150.jpg?bch=1638341954 "/>
+                 <p class="song-name">Icons - Kishore Kumar</p>
+                 <p class="fans">175.5k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/286/Yaad-Na-Aaye-Hindi-2022-20220110053549-150x150.webp?bch=456699"/>
+                 <p class="song-name">Yaad Na Aaye</p>
+                 <p class="fans">170.6k fans</p>
+               </div>
+               <div class="card">
+                   <img class="card-imag" src="https://c.saavncdn.com/editorial/RadheShyam-Hindi_20220112172851_150x150.jpg?bch=1642010371"/>
+                 <p class="song-name">Radhe-Shyam: Hindi</p>
+                 <p class="fans">169.6k fans</p>
+               </div>
+
+            </div>
+         </div>
+
+     </div>
+    
+</body>
+</html>
